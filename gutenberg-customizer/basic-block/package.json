@@ -1,0 +1,29 @@
+{
+  "name": "basic-block",
+  "version": "1.0.0",
+  "description": "This project will create custom block for new gutenberg editor (wordpress)",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env BABEL_ENV=default NODE_ENV=production webpack",
+    "dev": "cross-env BABEL-ENV=default webpack --watch"
+  },
+  "author": "Faisal Ahmed",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.2.0",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "transform-react-jsx"
+    ]
+  }
+}
